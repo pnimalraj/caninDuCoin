@@ -1,0 +1,165 @@
+/* Navbar Styles */
+.navbar {
+    background-color: #f8f9fa; /* Light grey background */
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: flex-end; /* Align navbar items to the right */
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Add spacing between items */
+}
+
+.navbar .nav-link {
+    text-decoration: none;
+    color: #333; /* Default text color */
+    font-size: 16px; /* Default font size */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover Effect */
+.navbar .nav-link:hover {
+    color: #000; /* Change color to black */
+    transform: scale(1.1); /* Slightly enlarge */
+}
+
+/* Image Container */
+.image-container {
+    position: relative; /* Enables text overlay positioning */
+    width: 100%;
+   /* max-width: 800px;  Adjust to fit your layout */
+    margin: auto;
+}
+
+.image-container img {
+    width: 100%;
+    display: block; /* Removes whitespace under the image */
+}
+
+/* Text Overlay */
+.text-overlay {
+    position: absolute;
+    top: 185px; /* Distance from the top of the image */
+    left: 110px; /* Distance from the left of the image */
+    color: white;
+    font-family: 'Esteban', serif; /* Apply Esteban font */
+    background-color: rgba(0, 0, 0, 0.1); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners for the text box */
+    max-width: 34%; /* Prevent text box from being too wide */
+}
+
+/* Title */
+.text-overlay h1 {
+    margin: 0 0 20px; /* Add space below the title */
+    font-size: 30px; /* Adjust font size for the title */
+    font-weight: bold;
+}
+
+/* Paragraph */
+.text-overlay p {
+    margin: 0 0 15px; /* Add space below the paragraph */
+    font-size: 18px; /* Adjust font size for the paragraph */
+    font-weight: bold;
+}
+
+/* Buttons */
+.text-overlay .buttons {
+    display: flex;
+    gap: 10px; /* Add space between buttons */
+}
+
+.text-overlay .btn {
+    text-decoration: none;
+    background-color: #5A7D4E; /* Muted green */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px; /* Rounded button */
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.3s ease; /* Smooth hover transition */
+    flex: 1; /* Make buttons grow to align evenly */
+}
+
+.text-overlay .btn:hover {
+    background-color: #8B5E3C; /* Change to earthy brown on hover */
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+/* Icon Styling */
+.paw-icon {
+    height: 24px; /* Adjust size as needed */
+    width: auto; /* Keep aspect ratio */
+    vertical-align: middle; /* Align with text */
+    margin: 0 5px; /* Add space around the icons */
+}
+
+/* Text Overlay Styles */
+.text-overlay h1 {
+    margin: 0 0 30px; /* Add space below the title */
+    font-size: 28px; /* Title font size */
+    font-family: 'Esteban', serif; /* Title font */
+    text-align: center; /* Center-align the text */
+    color: white; /* Title color */
+}
+
+/* Image Container *//*
+
+.image-container {
+    position: relative; */
+/* Parent container for positioning *//*
+
+    width: 100%; */
+/* Adjust as needed *//*
+
+*/
+/*    max-width: 600px; *//*
+*/
+/* Set a max width for the image *//*
+
+}
+
+.image-container img {
+    width: 100%; */
+/* Make the image responsive *//*
+
+    display: block; */
+/* Remove extra space below the image *//*
+
+}
+
+*/
+/* Text Overlay *//*
+
+.text-overlay {
+    position: absolute;
+    top: 200px; */
+/* Distance from the top *//*
+
+    left: 200px; */
+/* Distance from the left *//*
+
+    color: white; */
+/* White text *//*
+
+    background-color: rgba(0, 0, 0, 0.1); */
+/* Optional: Semi-transparent background *//*
+
+    padding: 5px 10px; */
+/* Add some padding for readability *//*
+
+    font-size: 26px; */
+/* Adjust font size as needed *//*
+
+    font-family: 'Esteban', cursive; */
+/* Apply Esteban Script *//*
+
+    border-radius: 4px; */
+/* Optional: Rounded corners for the background *//*
+
+}*/
