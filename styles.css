@@ -44,8 +44,8 @@
 /* Text Overlay */
 .text-overlay {
     position: absolute;
-    top: 150px; /* Distance from the top of the image */
-    left: 170px; /* Distance from the left of the image */
+    top: 195px; /* Distance from the top of the image */
+    left: 190px; /* Distance from the left of the image */
     color: white;
     font-family: 'Esteban', serif; /* Apply Esteban font */
     background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent background */
