@@ -45,13 +45,13 @@
 .text-overlay {
     position: absolute;
     top: 150px; /* Distance from the top of the image */
-    left: 110px; /* Distance from the left of the image */
+    left: 170px; /* Distance from the left of the image */
     color: white;
     font-family: 'Esteban', serif; /* Apply Esteban font */
-    background-color: rgba(0, 0, 0, 0.1); /* Semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent background */
     padding: 20px;
     border-radius: 8px; /* Rounded corners for the text box */
-    max-width: 34%; /* Prevent text box from being too wide */
+    max-width: 30%; /* Prevent text box from being too wide */
 }
 
 /* Title */
@@ -66,6 +66,7 @@
     margin: 0 0 15px; /* Add space below the paragraph */
     font-size: 18px; /* Adjust font size for the paragraph */
     font-weight: bold;
+    align: justify
 }
 
 /* Buttons */
