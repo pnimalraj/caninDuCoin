@@ -1,4 +1,4 @@
-<div class="container py-5">
+<div class="container mt-3">
     <div class="row justify-content-center align-items-start g-4">
         <!-- Carte de visite -->
         <div class="col-md-4">
@@ -25,66 +25,90 @@
                     </div>
                 </div>
             </div>
+            <!-- Image en bas -->
+            <div class="text-center mt-3">
+                <img src="../resources/contact-2.jpg" alt="Un chien adorable" class="img-fluid rounded shadow-sm">
+            </div>
         </div>
 
         <!-- Formulaire de contact -->
-        <div class="col-md-8">
+        <div class="col-md-8 mb-4">
             <div class="card shadow-sm">
                 <div class="card-body">
                     <h3 class="text-center form-title mb-4">Formulaire de Contact</h3>
-                    <form action="submit-form.php" method="POST">
-                        <div class="row mb-3">
-                            <div class="col-md-6">
-                                <label for="first-name" class="form-label">Votre prénom <span class="required">*</span></label>
-                                <input type="text" class="form-control" id="first-name" name="first_name" required>
+                    <form action="../send-email.php" method="POST">
+
+                        <!-- Section Infos Maître -->
+                        <div class="info-section mb-4">
+                            <div class="section-header d-flex align-items-center mb-3">
+                                <img src="resources/master-icon.png" alt="Maître" class="section-icon me-2">
+                                <h5 class="mb-0 text-custom-green">A propos de vous</h5>
                             </div>
-                            <div class="col-md-6">
-                                <label for="last-name" class="form-label">Votre nom <span class="required">*</span></label>
-                                <input type="text" class="form-control" id="last-name" name="last_name" required>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label for="last-name" class="form-label">Nom <span class="required">*</span></label>
+                                    <input type="text" class="form-control" id="last-name" name="last_name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="first-name" class="form-label">Prénom <span class="required">*</span></label>
+                                    <input type="text" class="form-control" id="first-name" name="first_name" required>
+                                </div>
                             </div>
-                        </div>
-                        <div class="row mb-3">
-                            <div class="col-md-6">
-                                <label for="city" class="form-label">Votre ville <span class="required">*</span></label>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label for="phone" class="form-label">N° de téléphone <span class="required">*</span></label>
+                                    <input type="tel" class="form-control" id="phone" name="phone" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Adresse e-mail <span class="required">*</span></label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="city" class="form-label">Ville de résidence <span class="required">*</span></label>
                                 <input type="text" class="form-control" id="city" name="city" required>
                             </div>
-                            <div class="col-md-6">
-                                <label for="email" class="form-label">Votre adresse e-mail <span class="required">*</span></label>
-                                <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+
+                        <!-- Section Infos Chien -->
+                        <div class="info-section mb-4">
+                            <div class="section-header d-flex align-items-center mb-3">
+                                <img src="resources/dog-icon.png" alt="Chien" class="section-icon me-2">
+                                <h5 class="mb-0 text-custom-green">A propos de votre toutou</h5>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label for="dog-name" class="form-label">Nom <span class="required">*</span></label>
+                                    <input type="text" class="form-control" id="dog-name" name="dog_name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="dog-breed" class="form-label">Race <span class="required">*</span></label>
+                                    <input type="text" class="form-control" id="dog-breed" name="dog_breed" required>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label for="dog-age" class="form-label">Âge <span class="required">*</span></label>
+                                    <input type="number" class="form-control" id="dog-age" name="dog_age" min="0" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="dog-sterilized" class="form-label">Votre chien est-il castré ou stérilisé ? <span class="required">*</span></label>
+                                    <select class="form-select" id="dog-sterilized" name="dog_sterilized" required>
+                                        <option value="">Sélectionner...</option>
+                                        <option value="oui">Oui</option>
+                                        <option value="non">Non</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
-                        <div class="row mb-3">
-                            <div class="col-md-6">
-                                <label for="phone" class="form-label">Votre numéro de téléphone <span class="required">*</span></label>
-                                <input type="tel" class="form-control" id="phone" name="phone" required>
-                            </div>
-                            <div class="col-md-6">
-                                <label for="dog-breed" class="form-label">La race de votre chien <span class="required">*</span></label>
-                                <input type="text" class="form-control" id="dog-breed" name="dog_breed" required>
-                            </div>
-                        </div>
-                        <div class="row mb-3">
-                            <div class="col-md-6">
-                                <label for="dog-name" class="form-label">Le nom de votre chien <span class="required">*</span></label>
-                                <input type="text" class="form-control" id="dog-name" name="dog_name" required>
-                            </div>
-                            <div class="col-md-6">
-                                <label for="dog-age" class="form-label">L’âge de votre chien <span class="required">*</span></label>
-                                <input type="number" class="form-control" id="dog-age" name="dog_age" min="0" required>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="dog-sterilized" class="form-label">Votre chien est-il castré ou stérilisé ? <span class="required">*</span></label>
-                            <select class="form-select" id="dog-sterilized" name="dog_sterilized" required>
-                                <option value="">Choisissez...</option>
-                                <option value="oui">Oui</option>
-                                <option value="non">Non</option>
-                            </select>
-                        </div>
+
+                        <!-- Champ Message -->
                         <div class="mb-3">
                             <label for="message" class="form-label">Message <span class="required">*</span></label>
-                            <textarea class="form-control message-field" id="message" name="message" rows="5" placeholder="Expliquez votre demande..." required></textarea>
+                            <textarea class="form-control message-field" id="message" name="message" rows="5" placeholder="Merci de préciser votre demande..." required></textarea>
                         </div>
+
+                        <!-- Bouton Envoyer -->
                         <button type="submit" class="btn btn-success w-100">Envoyer</button>
                     </form>
                 </div>

@@ -198,9 +198,17 @@
     font-size: 1.8rem;
 }
 
-.text-custom-green {
-    color: #5A7D4E; /* Couleur verte cohérente */
+/* Image sous la carte de visite */
+.img-fluid {
+    max-width: 100%;
+    height: auto; /* Rend l'image responsive */
+    border-radius: 8px; /* Coins arrondis */
+    margin-top: 15px; /* Espacement avec la carte */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Ombre subtile */
 }
+
+/* Formulaire */
+
 
 /* Champs du formulaire */
 .contact-form .form-label {
@@ -229,6 +237,48 @@
     font-size: 1.8rem;
     font-weight: bold;
     color: #5A7D4E; /* Vert utilisé pour les éléments */
+}
+
+/* Astérisques rouges */
+.required {
+    color: red;
+    font-weight: bold;
+}
+
+/* Style pour les sections */
+.info-section {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+/* Titre des sections */
+.section-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.section-header h5 {
+    font-weight: bold;
+}
+
+/* Icônes des sections */
+.section-icon {
+    width: 30px;
+    height: 30px;
+}
+
+/* Champ "Message" plus large */
+.message-field {
+    min-height: 150px;
+    font-size: 1rem;
+}
+
+/* Couleur verte pour le titre */
+.text-custom-green {
+    color: #5A7D4E; /* Même vert utilisé ailleurs */
 }
 
 /* Astérisques rouges */

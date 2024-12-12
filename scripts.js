@@ -46,5 +46,5 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // Default page load
-    loadContent("contact");
+    loadContent("bienvenue");
 });
