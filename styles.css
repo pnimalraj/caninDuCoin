@@ -1,4 +1,4 @@
-/* Navbar Styles */
+/* ===== Navbar Styles ====*/
 .navbar {
     background-color: #f8f9fa; /* Light grey background */
     padding: 10px 20px;
@@ -8,7 +8,6 @@
        display: flex; /* Use flexbox for alignment */
         align-items: center; /* Vertically align logo and links */
         justify-content: space-between; /* Space between logo and nav items */
-
 }
 
 .navbar ul {
@@ -32,12 +31,68 @@
     transform: scale(1.1); /* Slightly enlarge */
 }
 
+.nav-link.active {
+    color: #000; /* Bold black color for the active tab */
+    font-size: 16px; /* Larger font size for the active tab */
+    font-weight: bold; /* Make it bold */
+    transition: color 0.3s ease, font-size 0.3s ease;
+    border-bottom: 2px solid #000; /* Optional: underline the active link */
+}
+
+/* Navbar Social Icons */
+.social-icons {
+    display: flex;
+    align-items: center; /* Centre verticalement les icônes */
+    margin-left: auto; /* Pousse les icônes complètement à droite */
+    margin-right: 1rem; /* Ajoute un peu d'espace avec le bord droit */
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; /* Supprime le soulignement */
+}
+
+/* Styles des icônes */
+.social-icons i {
+    font-size: 24px; /* Taille des icônes */
+    transition: transform 0.3s ease, color 0.3s ease; /* Transition fluide */
+}
+
+/* Couleurs des applications */
+.social-icons .bi-instagram {
+    color: #E4405F; /* Couleur officielle Instagram */
+}
+
+.social-icons .bi-facebook {
+    color: #1877F2; /* Couleur officielle Facebook */
+}
+
+/* Effet au survol */
+.social-icons .bi-instagram:hover {
+    color: #F77737; /* Variante d'Instagram au survol */
+    transform: scale(1.3); /* Agrandissement au survol */
+}
+
+.social-icons .bi-facebook:hover {
+    color: #145DA0; /* Variante de Facebook au survol */
+    transform: scale(1.3); /* Agrandissement au survol */
+}
+
+#main-content {
+
+   background- min-height: calc(100vh - 200px); /* Hauteur de la fenêtre moins la hauteur du header et du footer */
+}
+
+/* ===== Bienvenue Styles ====*/
+
 /* Image Container */
 .image-container {
     position: relative; /* Enables text overlay positioning */
     width: 100%;
-       height: 85vh; /* Set container height to 75% of the viewport height */
-       overflow: hidden; /* Ensures no overflow outside the container */
+    height: 85vh; /* Set container height to 75% of the viewport height */
+    overflow: hidden; /* Ensures no overflow outside the container */
    /* max-width: 800px;  Adjust to fit your layout */
     margin: auto;
 }
@@ -52,7 +107,7 @@
 /* Text Overlay */
 .text-overlay {
     position: absolute;
-    top: 19%; /* Position the text 20% from the top of the container */
+    top: 12%; /* Position the text 20% from the top of the container */
     left: 11%; /* Position the text 10% from the left of the container */
     color: white;
     font-family: 'Esteban', serif; /* Apply Esteban font */
@@ -117,58 +172,67 @@
     color: white; /* Title color */
 }
 
-/* Image Container *//*
+/* ===== Contact Styles ====*/
 
-.image-container {
-    position: relative; */
-/* Parent container for positioning *//*
-
-    width: 100%; */
-/* Adjust as needed *//*
-
-*/
-/*    max-width: 600px; *//*
-*/
-/* Set a max width for the image *//*
-
+/* Image de la carte de visite */
+.card img {
+    border: 3px solid #5A7D4E; /* Cercle avec une bordure verte */
 }
 
-.image-container img {
-    width: 100%; */
-/* Make the image responsive *//*
-
-    display: block; */
-/* Remove extra space below the image *//*
-
+/* Style for the icon */
+.bi {
+    font-size: 1.2rem; /* Ensure icon size is proportionate */
+    color: #5A7D4E; /* Color for the icon */
 }
 
-*/
-/* Text Overlay *//*
+/* Style for the text */
+.availability-text {
+    margin-left: 8px; /* Adds space between the icon and the text */
+    font-size: 1rem; /* Adjust text size */
+    color: #000; /* Text remains black */
+}
 
-.text-overlay {
-    position: absolute;
-    top: 200px; */
-/* Distance from the top *//*
+/* Titres */
+.card h3 {
+    font-family: 'Kalam', cursive;
+    font-size: 1.8rem;
+}
 
-    left: 200px; */
-/* Distance from the left *//*
+.text-custom-green {
+    color: #5A7D4E; /* Couleur verte cohérente */
+}
 
-    color: white; */
-/* White text *//*
+/* Champs du formulaire */
+.contact-form .form-label {
+    font-weight: bold;
+}
 
-    background-color: rgba(0, 0, 0, 0.1); */
-/* Optional: Semi-transparent background *//*
+.contact-form .form-control, .contact-form .form-select {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
 
-    padding: 5px 10px; */
-/* Add some padding for readability *//*
+/* Bouton d'envoi */
+.btn-success {
+    background-color: #5A7D4E;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
 
-    font-size: 26px; */
-/* Adjust font size as needed *//*
+.btn-success:hover {
+    background-color: #8B5E3C;
+}
 
-    font-family: 'Esteban', cursive; */
-/* Apply Esteban Script *//*
+/* Titre du formulaire */
+.form-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #5A7D4E; /* Vert utilisé pour les éléments */
+}
 
-    border-radius: 4px; */
-/* Optional: Rounded corners for the background *//*
-
-}*/
+/* Astérisques rouges */
+.required {
+    color: red;
+    font-weight: bold;
+}
