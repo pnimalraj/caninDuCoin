@@ -1,0 +1,41 @@
+/* General Styles */
+body {
+    font-family: 'Kalam', cursive;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+/* Header Styles */
+header {
+    background-image: url('resources/dog-training-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+header h1, header p {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Business Card Styles */
+.business-card img {
+    border-radius: 50%;
+}
+
+.business-card .card {
+    border-color: #5A7D4E;
+}
+
+/* Contact Form Styles */
+.contact-form form {
+    border: 1px solid #ddd;
+}
+
+.contact-form .btn-primary {
+    background-color: #5A7D4E;
+    border: none;
+}
+
+.contact-form .btn-primary:hover {
+    background-color: #8B5E3C;
+}

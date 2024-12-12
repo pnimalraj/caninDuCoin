@@ -32,12 +32,16 @@
 .image-container {
     position: relative; /* Enables text overlay positioning */
     width: 100%;
+       height: 85vh; /* Set container height to 75% of the viewport height */
+       overflow: hidden; /* Ensures no overflow outside the container */
    /* max-width: 800px;  Adjust to fit your layout */
     margin: auto;
 }
 
 .image-container img {
     width: 100%;
+    height: 100%; /* Fill the container height */
+    object-fit: cover; /* Ensures the image scales proportionally without distortion */
     display: block; /* Removes whitespace under the image */
 }
 
